@@ -126,8 +126,8 @@
                     }\
                 </style>\
                 %@\
-                <script src=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js\"></script>\
-                <script src=\"https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.17/marked.min.js\"></script>\
+                <script src=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js\"></script>\
+                <script src=\"https://cdnjs.cloudflare.com/ajax/libs/marked/4.2.12/marked.min.js\"></script>\
                 <script>\
                     marked.setOptions({\
                         renderer: new marked.Renderer(),\
@@ -165,21 +165,21 @@
 
 - (NSString *)darkCssLink {
     if (!_darkCssLink) {
-        _darkCssLink = @"<link href=\"https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-dark.min.css\" rel=\"stylesheet\"/>";
+        _darkCssLink = @"<link href=\"https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-dark.min.css\" rel=\"stylesheet\"/>";
     }
     return _darkCssLink;
 }
 
 - (NSString *)lightCssLink {
     if (!_lightCssLink) {
-        _lightCssLink = @"<link href=\"https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown-light.min.css\" rel=\"stylesheet\"/>";
+        _lightCssLink = @"<link href=\"https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown-light.min.css\" rel=\"stylesheet\"/>";
     }
     return _lightCssLink;
 }
 
 - (NSString *)highlightStyleCssLink {
     if (!_highlightStyleCssLink) {
-        _highlightStyleCssLink = @"<link href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/%@.min.css\" rel=\"stylesheet\"/>";
+        _highlightStyleCssLink = @"<link href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/%@.min.css\" rel=\"stylesheet\"/>";
     }
     return _highlightStyleCssLink;
 }
